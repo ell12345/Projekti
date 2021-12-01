@@ -1,0 +1,204 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --clr-text:#f3f3f3;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1em 2em;
+    color: var(--clr-text);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 1.125rem;
+    letter-spacing: 1px;
+    font-size: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--clr-text);
+    
+} 
+
+.home{
+    background: url("img/brooke-lark-M4E7X3z80PQ-unsplash.jpg") no-repeat center center / cover;
+    width: 100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: -2;
+}
+
+.home::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+.home h1 {
+    font-size: 20vw;
+    color: var(--clr-text);
+
+}
+.home p{
+    font-size: 3vw;
+    color: var(--clr-text);
+}
+
+img {
+    max-width: 100%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height:100vh;
+    background: linear-gradient(to bottom,
+        hsla(0, 0%, 0%, 0)0%,
+        hsla(0,0%, 0%, 0.3)10%,
+        hsla(0, 0%, 0%, 1)100%,
+
+    );
+}
+
+.content1 .left-side {
+    width: 100%;
+    height: 100%;
+    background: url('./img/eiliv-sonas-aceron-ZuIDLSz3XLg-unsplash.jpg') no-repeat center center / cover;
+    flex: 2;
+}
+
+
+.right-side {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #1A1B1D;
+    color: #f3f3f3;
+    padding: 0 5rem;
+}
+.right-side h2{
+    font-size: 70px;
+    font-family: 'Rancho', cursive;
+    letter-spacing: 3px;
+    margin-bottom: 4rem;
+    color: rgb(24, 134, 197);
+}
+
+.right-side p{
+    font-weight: 300;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.spacer{
+    height: 200px;
+    width: 100%;
+    background-color: #1A1B1D;
+}
+.content2 .left-side {
+    width: 100%;
+    height: 100%;
+    background: url('./img/joseph-gonzalez-fdlZBWIP0aM-unsplash.jpg') no-repeat center center / cover;
+    flex: 2;
+}
+
+.content3 .left-side {
+    width: 100%;
+    height: 100%;
+    background: url('./img/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg') no-repeat center center / cover;
+    flex: 2;
+}
+
+@media (max-width: 900px){
+    .content .right-side p{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 750px) {
+    .content{
+        flex-direction: column;
+    }
+}
+@media (max-width: 400px){
+    .content .right-side p{
+        font-size: 20px;
+        margin-bottom: 25px;
+      
+    }
+    
+    .content .left-side{
+        order:2;
+    }
+    .content .right-side{
+        order:1;
+        padding: 0 3rem;
+        
+    }
+    .content .right-side h2{
+        margin: 20px 0 30px;
+    }
+
+    .home p{
+        font-size: 30px;
+    }
+    .header{
+        background-color: #1A1B1D;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .nav-list{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 15px;
+       
+    }
+    .nav-item{
+        margin-right: 0px;
+    }
+}
+
+
