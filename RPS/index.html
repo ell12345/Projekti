@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="naslov">ROCK - PAPER - SCISSORS!</h1>
+    <section class="prvi">
+      <button id="rock"><i class="las la-hand-rock" ></i>ROCK</button>
+      <button id="paper"><i class="las la-hand-paper" ></i>PAPER</button>
+      <button id="scissors"><i class="las la-hand-scissors" ></i>SCISSORS</button>
+    </section>
+
+    <section class="drugi">
+      <div class="choice">
+        <h2>YOUR CHOICE</h2>
+        <div id="user-choice" class="icon-container"><i class="las la-question" id="user-icon"></i></i></div>
+        <p id="user-label">user</p>
+      </div>
+
+      <div class="choice">
+        <h2>COMPUTERS CHOICE</h2>
+        <div id="computer-choice" class="icon-container"><i class="las la-question" id="computer-icon"></i></div>
+        <p id="computer-label">computer</p>
+      </div>
+    </section>
+
+    <section class="treci">
+      <p>RESULT:</p>
+      <p id="result"></p>
+      <p>USER <span id="score"></span>  COMPUTER</p>
+
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
